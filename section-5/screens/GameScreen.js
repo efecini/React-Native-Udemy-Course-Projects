@@ -63,8 +63,6 @@ function GameScreen({ userNumber, onGameOver }) {
     setGuessRounds((prevGuessRounds) => [newRndNumber, ...prevGuessRounds]);
   }
 
-  const guessRoundsListLength = guessRounds.length;
-
   return (
     <View style={styles.screen}>
       <Title>Opponent's Guess</Title>
@@ -108,6 +106,7 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 24,
+    alignItems: "center",
   },
   instructionText: {
     marginBottom: 12,
